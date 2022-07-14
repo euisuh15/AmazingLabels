@@ -33,9 +33,17 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         title: 'AmazingLabels',
-        home: RandomWords(),
+        theme: ThemeData(
+            backgroundColor: Colors.blue[200],
+            fontFamily: 'Raleway',
+            appBarTheme: AppBarTheme(
+              backgroundColor: Colors.blue[200],
+              // foregroundColor: Colors.black,
+            )
+        ),
+        home: const RandomWords(),
       );
   }
 }
